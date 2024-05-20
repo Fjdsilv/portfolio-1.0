@@ -1,0 +1,123 @@
+@media only screen and (max-width:1200px){
+	.wrapper{
+		padding:0 2%;
+	}
+
+	.hero1{
+		width:80%;
+	}
+
+	.hero1 .hero2{
+		left:120px;
+	}
+}
+
+@media only screen and (max-width:1023px){
+	body{
+		font-size:16px;
+	}
+
+	section{
+		padding:40px 0;
+	}
+
+	.hero1{
+		padding:290px 0;
+	}
+
+	.lastwork .wbox{
+		position:relative;
+		width:48%;
+		height:357px;
+		margin-top:22px;
+		background-color:rgba(0, 31, 45,.5);
+		transition:.3s;
+	}
+
+}
+
+@media only screen and (max-width:768px){
+	body{
+		font-size:14px;
+	}	
+
+	.skill_box{
+		flex-direction:column;
+	}
+
+	.skill_box div{
+		margin:auto;
+		margin-bottom:22px;
+		width:90%;
+	}
+
+	/*responsive menu*/
+
+	.container{
+		display:block;
+	}
+
+	header ul{
+		position:fixed;
+		top:100px;
+		left:-100%;
+		width:100%;
+		height:100vh;
+		z-index:7;
+		background-color:#00131c;
+		transition:.3s;
+		transition-delay:.1s;
+		transition-timing-function:ease;
+	}
+
+	header ul li{
+		display:block;
+		margin:50px 0;
+		text-align:center;
+		font-size:20px;
+	}
+
+	header.open ul{
+		left:0;
+	}
+}
+
+@media only screen and (max-width:480px){
+	body{
+		font-size:13px;
+	}
+
+	.hero1 .hero2 p:first-of-type{
+		padding-left:4px;
+	}
+
+	.lastwork .wbox{
+		flex-direction:column;
+		width:90%;
+		margin:auto;
+		margin-top:22px;
+	}
+
+	.hero1 .hero2 h1{
+		font-size:4em;
+	}
+
+	.hero1 .hero2 h1 span{
+		font-size:.4em;
+	}
+
+	.hero1 .hero2  h2{
+		margin-top:5px;
+		font-size:2.5em;
+		padding-left:6px;
+		color:rgba(247,247,247,.6);
+	}
+
+	.hero1 .hero2 p:last-of-type{
+		margin-top:30px;
+		font-size:1em;
+		text-align:justify;
+		padding-left:9px;
+		color:rgba(247,247,247,.5);
+	}
+}
